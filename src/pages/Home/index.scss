@@ -1,0 +1,32 @@
+@import "../../";
+
+.Home {
+  display: flex;
+  flex-direction: column;
+  gap: calc($gap-2 * 2);
+  width: 100%;
+  margin: auto;
+  padding: 0 $gap-2;
+
+  h3 {
+    font-size: 5.5em;
+    font-weight: 800;
+    text-transform: capitalize;
+    line-height: 0.9em;
+    letter-spacing: -3px;
+    transition: 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      color: $text-hover;
+    }
+
+    b {
+      padding-left: 10px;
+      vertical-align: text-top;
+      font-size: 0.2em;
+      font-weight: 200;
+      letter-spacing: 0;
+    }
+  }
+}
