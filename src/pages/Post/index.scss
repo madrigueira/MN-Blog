@@ -15,4 +15,42 @@
     line-height: 1em;
     letter-spacing: -3px;
   }
+
+  .meta {
+    display: flex;
+    padding: $gap 0;
+
+    a {
+      font-size: 1.2em;
+      transition: 0.2s;
+
+      &:hover {
+        color: $text-hover;
+      }
+    }
+
+    p {
+      font-size: 1.2em;
+
+      &::before {
+        content: "•";
+        padding: 0 calc($gap / 2);
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    padding: $gap 0;
+
+    div {
+      p {
+        font-size: 1em;
+      }
+
+      pre {
+        white-space: break-spaces;
+      }
+    }
+  }
 }

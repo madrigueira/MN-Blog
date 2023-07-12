@@ -1,14 +1,18 @@
 import "./index.scss";
+import { Link } from "react-router-dom";
 
-const Home = () => {
+const Home = ({ post }) => {
   return (
     <div className="Home">
-      <h3>
-        Como Centralizar uma Div em 2023? (Eu Também Não Sei)<b>jul/2023</b>
-      </h3>
-      <h3>
-        Não tem ChatGPT na Bíblia<b>jul/2023</b>
-      </h3>
+      {post &&
+        post.map((post) => (
+          <Link to={post.slug} key={post.slug}>
+            <h3>
+              {post.title}
+              <b>jul/2023</b>
+            </h3>
+          </Link>
+        ))}
       <h3>
         Uma Carta de Amor ao GraphQL<b>jul/2023</b>
       </h3>

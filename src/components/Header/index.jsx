@@ -1,9 +1,10 @@
 import "./index.scss";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <header>
-      <a href="#">mnd.</a>
+      <Link to={"/"}>mnd.</Link>
     </header>
   );
 };
