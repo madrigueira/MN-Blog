@@ -1,4 +1,4 @@
-export function obterInicialMes(numeroMes) {
+export function RenameMonths(numeroMes) {
   var iniciaisMeses = [
     "",
     "Janeiro",

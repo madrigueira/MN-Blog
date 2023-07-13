@@ -1,10 +1,10 @@
 import "./index.scss";
-import { obterInicialMes } from "../../assets/months";
+import { RenameMonths } from "../../assets/months";
 
 const Post = ({ post }) => {
   const time = post.date.slice(11, -9).replace(":", "h");
   const dateNotOrder = post.date.slice(0, -15).split("-");
-  const date = `${dateNotOrder[2]} de ${obterInicialMes(dateNotOrder[1])} de ${
+  const date = `${dateNotOrder[2]} de ${RenameMonths(dateNotOrder[1])} de ${
     dateNotOrder[0]
   }`;
 

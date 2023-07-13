@@ -1,7 +1,15 @@
 import "./index.scss";
 import { Link } from "react-router-dom";
+import { RenameMonths } from "../../assets/months";
 
 const Home = ({ post }) => {
+  function date(postDate) {
+    const dateNotOrder = postDate.slice(0, -15).split("-");
+    const date = `${RenameMonths(dateNotOrder[1]).slice(0, 3)}/${
+      dateNotOrder[0]
+    }`;
+    return date;
+  }
   return (
     <div className="Home">
       {post &&
@@ -9,7 +17,7 @@ const Home = ({ post }) => {
           <Link to={post.slug} key={post.slug}>
             <h3>
               {post.title}
-              <b>jul/2023</b>
+              <b>{`${date(post.date)}`}</b>
             </h3>
           </Link>
         ))}
