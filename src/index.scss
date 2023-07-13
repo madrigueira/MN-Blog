@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 // COLORS
-$text: #000;
-$text-hover: #000000a4;
+$text: #0e0e0e;
+$text-hover: #0e0e0ec4;
 
 // VARIABLES
 $gap: 15px;
@@ -14,6 +14,7 @@ $gap-2: 30px;
   padding: 0;
   box-sizing: border-box;
   font-family: "DM Sans", sans-serif;
+  color: $text;
 }
 
 a {

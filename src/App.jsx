@@ -17,10 +17,10 @@ function App() {
           posts{
             title,
             slug,
-            updatedAt,
             content {
               html
-            }
+            },
+            date
           }
         }`
       );
